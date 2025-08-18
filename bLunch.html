@@ -46,6 +46,10 @@
       </div>
     </nav>
     <div class="container-fluid mondaFont">
+      <div class="text-center">
+          <div class="row">
+             <div class="lastDay">Last day of school in <span id="lastDay">idk</span>!</div>
+         </div>
         <div class="row">
           <div class="col-sm-12">
             <h1 class="amaranthFont roundedCorner">B Lunch Schedule</h1>
@@ -113,6 +117,9 @@
         </div>
       </div>
     </div>
+    <script>
+        document.getElementById("lastDay").textContent = countdown(new Date(), new Date(2025, 4, 28, 13, 10, 0), countdown.DEFAULTS, 2).toString();
+    </script>
     <script src="bLunch.js"></script>
     <script src="theme.js"></script>
     <script src="secret.js"></script>
