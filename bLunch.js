@@ -15,7 +15,7 @@ function updateClock() {
         document.getElementById("timeUntilEnd").textContent = "";
     } 
     else {
-        const hour = now.getUTCHours() - 4;
+        const hour = now.getUTCHours() - 5;
         const minute = now.getMinutes();
         const second = now.getSeconds();
         const totalSeconds = hour * 3600 + minute * 60 + second;
