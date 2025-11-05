@@ -12,7 +12,7 @@ function updateClock() { // Goal of this function is to grab the user's local ti
         document.getElementById("timeUntilEnd").textContent = "";
     }
     else {
-        const hour = now.getUTCHours() - 4; // Gets the UTC hour and subtracts 5 from it. This way, no matter what timezone your computer is in, the website will be in EST timezone. Daylight savings time kinda messes with this functionality because UTC does not adhere to the time change but EST does. So far, I've only used a band-ad fix of changing the hours subtracted from 5 to 4. I'm sure there's a library to deal with this, but that's too much work and I'm graduating soon. 
+        const hour = now.getUTCHours() - 5; // Gets the UTC hour and subtracts 5 from it. This way, no matter what timezone your computer is in, the website will be in EST timezone. Daylight savings time kinda messes with this functionality because UTC does not adhere to the time change but EST does. So far, I've only used a band-ad fix of changing the hours subtracted from 5 to 4. I'm sure there's a library to deal with this, but that's too much work and I'm graduating soon. 
         const minute = now.getMinutes(); // Gets the current minute
         const second = now.getSeconds(); // Gets the current second
         const totalSeconds = hour * 3600 + minute * 60 + second; // Calculates how many seconds have passed since midnight. This number is used to determine what period school is in. 
