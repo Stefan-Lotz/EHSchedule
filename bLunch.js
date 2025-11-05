@@ -3,7 +3,7 @@
  * changed to reflect changes made to the schedule at Edgewater. Because of this, I didn't bother to write comments in this file, so go there if you'd like to see my thoughts!
  */
 function updateClock() {
-    const now = new Date();
+    const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
     const dayOfWeek = now.getDay();
     
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -15,7 +15,7 @@ function updateClock() {
         document.getElementById("timeUntilEnd").textContent = "";
     } 
     else {
-        const hour = now.getUTCHours() - 4;
+        const hour = now.getHours();
         const minute = now.getMinutes();
         const second = now.getSeconds();
         const totalSeconds = hour * 3600 + minute * 60 + second;
