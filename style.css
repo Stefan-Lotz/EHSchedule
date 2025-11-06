@@ -1,3 +1,5 @@
+@import url("themes.css");
+
 .amaranthFont { /* Sets the font to GoogleFont's "Amaranth" */
     font-family:'Amaranth';
 }
@@ -34,21 +36,8 @@
     color: var(--color-bg);
 }
 
-[data-theme="light"] {
-    --color-bg: #ffffff;
-    --color-fg: #000000;
-    --color-footer: #cdcdcd;
-    
-}
-
-[data-theme="dark"] {
-    --color-bg: #212121;
-    --color-fg: #F8EDE3;
-    --color-footer: #323232;
-}
-
 .roundedCorner { /* Creates the rounded border surrounding the title of each page. */
-    border: 2px solid #cdcdcd;
+    border: 2px solid var(--color-border);
     border-radius: 25px;
     padding: 20px;
     max-width: 500px;
@@ -76,7 +65,7 @@
     background-color: var(--color-footer);
 }
 
-.themeButton {
+/* .themeButton {
     padding: 0%;
     margin: 10px 0% 0% 0%;
     width: 30px;
@@ -85,11 +74,23 @@
     border-width: 0px;
     font-size: 5px;
     background-color: rgba(0, 0, 0, 0);
+} */
+
+.themeSelect {
+    padding: 0%;
+    margin: 10px 0% 0% 0%;
+/*     width: 30px; make this max-width*/
+    min-width: 20%;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 0px;
+/*     font-size: 5px; */
+    background-color: rgba(0, 0, 0, 0);
+    color: #9d9d9d;
 }
 
 .version {
     font-size: 18px;
-    
 }
 
 .versionDate {
@@ -98,7 +99,7 @@
 }
 
 .changelog {
-    border: 2px solid #cdcdcd;
+    border: 2px solid var(--color-border);
     border-radius: 8px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -151,7 +152,7 @@ table { /* Makes tables format how I like them. */
 
 th, td { /* Makes tables have bordered dividers. */
     padding: 8px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid var(--color-border);
 }
 
 tr:hover { /* Makes the tables hoverable! Try hovering over them with your mouse! */

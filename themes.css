@@ -1,0 +1,27 @@
+/*When JS changes the data-theme on html, the corresponding css variables will apply.*/
+
+[data-theme="light"] {
+    --color-bg: hsl(0, 0%, 100%);
+    --color-fg: hsl(0, 0%, 0%);
+    --color-footer: hsl(0, 0%, 80%);
+    --color-border: hsl(0, 0%, 80%);
+
+    --color-bg-nav: hsl(0, 0%, 97%);
+    --color-border-nav: hsl(0, 0%, 91%);
+
+    --color-active-nav-bg: hsl(0, 0%, 91%);
+    --color-active-nav-text: hsl(0, 0%, 33%);
+}
+
+[data-theme="dark"] {
+    --color-bg: hsl(0, 0%, 13%);
+    --color-fg: hsl(29, 60%, 93%);
+    --color-footer: hsl(0, 0%, 20%);
+    --color-border: hsl(0, 0%, 80%);
+
+    --color-bg-nav: hsl(0, 0%, 13%);
+    --color-border-nav: hsl(0, 0%, 3%);
+
+    --color-active-nav-bg: hsl(0, 0%, 3%);
+    --color-active-nav-text: hsl(0, 0%, 100%);
+}
