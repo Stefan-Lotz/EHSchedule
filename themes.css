@@ -6,11 +6,32 @@
     --color-footer: hsl(0, 0%, 80%);
     --color-border: hsl(0, 0%, 80%);
 
-    --color-bg-nav: hsl(0, 0%, 97%);
+    --color-text: hsl(0, 0%, 0%);
+
+
     --color-border-nav: hsl(0, 0%, 91%);
 
+    --color-inTenTen-text: hsl(0, 84%, 57%);
+
+    /*Nav*/
     --color-active-nav-bg: hsl(0, 0%, 91%);
     --color-active-nav-text: hsl(0, 0%, 33%);
+
+    --color-nav-bg: hsl(0, 0%, 97%);
+    --color-nav-border: hsl(0, 0%, 91%);
+
+    --color-nav-text: hsl(0, 0%, 47%);
+    --color-nav-active-text: hsl(0, 0%, 33%);
+    --color-nav-active-bg: hsl(0, 0%, 91%);
+
+    --color-nav-text-hover: hsl(0, 0%, 20%);
+
+
+    --color-nav-brand: hsl(0, 0%, 47%);
+    --color-nav-brand-hover: hsl(0, 0%, 37%);
+
+    /*If the theme has a background image*/
+    --image-bg: url("");
 }
 
 [data-theme="dark"] {
@@ -19,9 +40,72 @@
     --color-footer: hsl(0, 0%, 20%);
     --color-border: hsl(0, 0%, 80%);
 
-    --color-bg-nav: hsl(0, 0%, 13%);
+    --color-text: hsl(29, 60%, 93%);
+
     --color-border-nav: hsl(0, 0%, 3%);
 
+    --color-inTenTen-text: hsl(0, 84%, 57%);
+
+    /*Nav*/
     --color-active-nav-bg: hsl(0, 0%, 3%);
     --color-active-nav-text: hsl(0, 0%, 100%);
+
+    --color-nav-bg: hsl(0, 0%, 13%);
+    --color-nav-border: hsl(0, 0%, 3%);
+
+    --color-nav-text: hsl(0, 0%, 62%);
+    --color-nav-text-hover: hsl(60, 20%, 93%);
+    --color-nav-active-text: hsl(0, 0%, 100%);
+    --color-nav-active-bg: hsl(0, 0%, 3%);
+
+
+    --color-nav-brand: hsl(0, 0%, 62%);
+    --color-nav-brand-hover: hsl(0, 0%, 100%);
+
+    /*If the theme has a background image*/
+    --image-bg: url("");
 }
+
+[data-theme="purple-dark"] {
+    --color-bg: hsl(256 100% 6%);
+    --color-fg: hsl(256 100% 9%);
+    --color-footer: hsl(255 67% 20%);
+    --color-border: hsl(255 67% 40%);
+    --color-text: hsl(0, 0%, 89%);
+    --color-border-nav: hsl(240 100% 100%);
+    --color-inTenTen-text: hsl(0deg 99.36% 34.44%);
+    --color-active-nav-bg: hsl(250 58% 54%);
+    --color-active-nav-text: hsl(0, 0%, 100%);
+    --color-nav-bg: hsl(255 67% 20%);
+    --color-nav-border: var(--color-border);
+    --color-nav-text: hsl(357deg 0% 89.12%);
+    --color-nav-text-hover: hsl(0deg 0% 75.74%);
+    --color-nav-active-text: hsl(0, 0%, 100%);
+    --color-nav-active-bg: hsl(256 100% 6%);
+    --color-nav-brand: hsl(0deg 100% 99%);
+    --color-nav-brand-hover: hsl(0, 0%, 87%);
+    /*If the theme has a background image*/
+    --image-bg: url("");
+}
+/* 
+[data-theme="purple-light"] {
+    --color-bg: hsl(0, 0%, 95%);
+    --color-fg: hsl(0, 0%, 90%);
+    --color-footer: hsl(255, 67%, 95%);
+    --color-border: hsl(255, 67%, 85%);
+    --color-text: hsl(0, 0%, 20%);
+    --color-border-nav: hsl(240, 100%, 40%);
+    --color-inTenTen-text: hsl(53, 100%, 35%);
+    --color-active-nav-bg: hsl(250, 58%, 84%);
+    --color-active-nav-text: hsl(0, 0%, 20%);
+    --color-nav-bg: hsl(255, 67%, 95%);
+    --color-nav-border: var(--color-border);
+    --color-nav-text: hsl(0, 0%, 20%);
+    --color-nav-text-hover: hsl(0, 0%, 30%);
+    --color-nav-active-text: hsl(0, 0%, 20%);
+    --color-nav-active-bg: hsl(0, 0%, 95%);
+    --color-nav-brand: hsl(0, 100%, 20%);
+    --color-nav-brand-hover: hsl(0, 0%, 35%);
+    /*If the theme has a background image
+    --image-bg: url("");
+} */

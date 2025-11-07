@@ -1,25 +1,21 @@
 const select = document.getElementById("themeSelect");
+const themes = [
+    "light",
+    "dark",
+    "purple-dark"
+];
 
 function changeTheme(themeName) {
-   switch (themeName) {
-    case "light":
-         document.getElementById("html").setAttribute("data-theme", themeName);
-         select.value = themeName;
-         localStorage.setItem("themeChoice", themeName);
-        break;
-    
-    case "dark":
-         document.getElementById("html").setAttribute("data-theme", themeName);
-         select.value = themeName;
-         localStorage.setItem("themeChoice", themeName);
-        break;
-    default:
+    if (themes.includes(themeName)) {
+        document.getElementById("html").setAttribute("data-theme", themeName);
+        select.value = themeName;
+        localStorage.setItem("themeChoice", themeName);
+    } else {
         // if the name did not match any above, default to light.
         document.getElementById("html").setAttribute("data-theme", "light");
         select.value = "light";
         localStorage.setItem("themeChoice", "light");
-        break;
-   } 
+    }
 }
 
 document.getElementById("themeSelect").addEventListener("change", () => {

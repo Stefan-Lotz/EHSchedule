@@ -8,6 +8,40 @@
     font-family:'Monda';
 }
 
+/*Overriding bootstrap's navbar colors so we can change it to match the current theme*/
+
+/*Navbar background color and border color*/
+.navbar-default {
+    background-color: var(--color-nav-bg); /* --nav-bg */
+    border-color: var(--color-nav-border);       /* --nav-border */
+}
+
+.navbar-default .navbar-nav>li>a { /*Text color for nav links (by default he bg is transparent)*/
+    color: var(--color-nav-text);
+}
+
+/*Text color for nav links on hover*/
+.navbar-default .navbar-nav>li>a:hover:not(.navbar-default .navbar-nav>.active>a) {
+    color: var(--color-nav-text-hover); 
+}
+
+
+/*text and background colors for the active link in the nav bar*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: var(--color-nav-active-text);
+    background-color: var(--color-nav-active-bg);
+}
+
+.navbar-default .navbar-brand { /*Text color for the nav brand*/
+    color: var(--color-nav-brand); 
+}
+
+.navbar-default .navbar-brand:hover { /*Text color on hover for nav brand*/
+    color: var(--color-nav-brand-hover);
+}
+
+/*End of overrides*/
+
 .prom {
     background-color: var(--color-footer);
     padding: 5px 4px;
@@ -81,12 +115,15 @@
     margin: 10px 0% 0% 0%;
 /*     width: 30px; make this max-width*/
     min-width: 20%;
+    max-width: 25%;
     height: 30px;
     border-radius: 10px;
     border-width: 0px;
 /*     font-size: 5px; */
-    background-color: rgba(0, 0, 0, 0);
-    color: #9d9d9d;
+    /*With out a bg it blended in too much*/
+    background-color: var(--color-nav-active-bg);
+ /*    background-color: rgba(0, 0, 0, 0); */
+    color: var(--color-nav-active-text);
 }
 
 .version {
@@ -121,7 +158,7 @@
 }
 
 .inTenTen {
-    color: #ed3434;
+    color: var(--color-inTenTen-text);
 }
 
 .rainbow{
@@ -140,7 +177,13 @@ tr.active {
 body {
     padding-bottom: 5%;
     background-color: var(--color-bg);
-    color: var(--color-fg);
+    color: var(--color-text);
+    
+    /*If the style has a background image*/
+    background-image: var(--image-bg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
 
 table { /* Makes tables format how I like them. */
