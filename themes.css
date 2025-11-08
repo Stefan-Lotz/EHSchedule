@@ -1,111 +1,109 @@
 /*When JS changes the data-theme on html, the corresponding css variables will apply.*/
 
 [data-theme="light"] {
-    --color-bg: hsl(0, 0%, 100%);
-    --color-fg: hsl(0, 0%, 0%);
-    --color-footer: hsl(0, 0%, 80%);
-    --color-border: hsl(0, 0%, 80%);
+    --color-bg: hsl(0, 0%, 100%);               /*Background color*/
+    --color-footer: hsl(0, 0%, 80%);            /*Footer color*/
+    --color-border: hsl(0, 0%, 80%);            /*Border color*/
 
-    --color-text: hsl(0, 0%, 0%);
+    --color-text: hsl(0, 0%, 0%);               /*Text color*/
 
+    --color-inTenTen-text: hsl(0, 84%, 57%);    /*Count down when in ten ten*/
 
-    --color-border-nav: hsl(0, 0%, 91%);
+    --color-nav-bg: hsl(0, 0%, 97%);            /*Navbar background color*/
+    --color-nav-border: hsl(0, 0%, 91%);        /*Navbar border color*/
 
-    --color-inTenTen-text: hsl(0, 84%, 57%);
+    --color-nav-text: hsl(0, 0%, 47%);          /*Navbar links color*/
+    --color-nav-active-text: hsl(0, 0%, 33%);   /*Navbar on hover links color*/
+    --color-nav-active-bg: hsl(0, 0%, 91%);     /*Active link on navbar & dropdown bg color*/
 
-    /*Nav*/
-    --color-active-nav-bg: hsl(0, 0%, 91%);
-    --color-active-nav-text: hsl(0, 0%, 33%);
+    --color-nav-text-hover: hsl(0, 0%, 20%);    /*Text color for navbar links on hover*/
 
-    --color-nav-bg: hsl(0, 0%, 97%);
-    --color-nav-border: hsl(0, 0%, 91%);
+    --color-nav-brand: hsl(0, 0%, 47%);         /*Navbar brand text color*/
+    --color-nav-brand-hover: hsl(0, 0%, 37%);   /*Navbar brand text color on hover*/
 
-    --color-nav-text: hsl(0, 0%, 47%);
-    --color-nav-active-text: hsl(0, 0%, 33%);
-    --color-nav-active-bg: hsl(0, 0%, 91%);
-
-    --color-nav-text-hover: hsl(0, 0%, 20%);
-
-
-    --color-nav-brand: hsl(0, 0%, 47%);
-    --color-nav-brand-hover: hsl(0, 0%, 37%);
-
-    /*If the theme has a background image*/
-    --image-bg: url("");
+    --image-bg: url("");                          /*Background image (If no image leave blank)*/
 }
 
 [data-theme="dark"] {
     --color-bg: hsl(0, 0%, 13%);
-    --color-fg: hsl(29, 60%, 93%);
     --color-footer: hsl(0, 0%, 20%);
     --color-border: hsl(0, 0%, 80%);
 
     --color-text: hsl(29, 60%, 93%);
 
-    --color-border-nav: hsl(0, 0%, 3%);
-
     --color-inTenTen-text: hsl(0, 84%, 57%);
-
-    /*Nav*/
-    --color-active-nav-bg: hsl(0, 0%, 3%);
-    --color-active-nav-text: hsl(0, 0%, 100%);
 
     --color-nav-bg: hsl(0, 0%, 13%);
     --color-nav-border: hsl(0, 0%, 3%);
 
     --color-nav-text: hsl(0, 0%, 62%);
-    --color-nav-text-hover: hsl(60, 20%, 93%);
     --color-nav-active-text: hsl(0, 0%, 100%);
     --color-nav-active-bg: hsl(0, 0%, 3%);
 
+    --color-nav-text-hover: hsl(60, 20%, 93%);
 
     --color-nav-brand: hsl(0, 0%, 62%);
     --color-nav-brand-hover: hsl(0, 0%, 100%);
 
-    /*If the theme has a background image*/
     --image-bg: url("");
 }
 
 [data-theme="purple-dark"] {
     --color-bg: hsl(256 100% 6%);
-    --color-fg: hsl(256 100% 9%);
     --color-footer: hsl(255 67% 20%);
     --color-border: hsl(255 67% 40%);
+
     --color-text: hsl(0, 0%, 89%);
-    --color-border-nav: hsl(240 100% 100%);
+
     --color-inTenTen-text: hsl(0deg 99.36% 34.44%);
-    --color-active-nav-bg: hsl(250 58% 54%);
-    --color-active-nav-text: hsl(0, 0%, 100%);
+
     --color-nav-bg: hsl(255 67% 20%);
     --color-nav-border: var(--color-border);
+
     --color-nav-text: hsl(357deg 0% 89.12%);
-    --color-nav-text-hover: hsl(0deg 0% 75.74%);
     --color-nav-active-text: hsl(0, 0%, 100%);
     --color-nav-active-bg: hsl(256 100% 6%);
+
+    --color-nav-text-hover: hsl(0deg 0% 75.74%);
+
     --color-nav-brand: hsl(0deg 100% 99%);
     --color-nav-brand-hover: hsl(0, 0%, 87%);
-    /*If the theme has a background image*/
+
     --image-bg: url("");
 }
-/* 
-[data-theme="purple-light"] {
-    --color-bg: hsl(0, 0%, 95%);
-    --color-fg: hsl(0, 0%, 90%);
-    --color-footer: hsl(255, 67%, 95%);
-    --color-border: hsl(255, 67%, 85%);
-    --color-text: hsl(0, 0%, 20%);
-    --color-border-nav: hsl(240, 100%, 40%);
-    --color-inTenTen-text: hsl(53, 100%, 35%);
-    --color-active-nav-bg: hsl(250, 58%, 84%);
-    --color-active-nav-text: hsl(0, 0%, 20%);
-    --color-nav-bg: hsl(255, 67%, 95%);
-    --color-nav-border: var(--color-border);
-    --color-nav-text: hsl(0, 0%, 20%);
-    --color-nav-text-hover: hsl(0, 0%, 30%);
-    --color-nav-active-text: hsl(0, 0%, 20%);
-    --color-nav-active-bg: hsl(0, 0%, 95%);
-    --color-nav-brand: hsl(0, 100%, 20%);
-    --color-nav-brand-hover: hsl(0, 0%, 35%);
-    /*If the theme has a background image
-    --image-bg: url("");
-} */
+
+
+[data-theme="sunrise"] {
+    --color-bg: hsl(0, 0%, 100%);             /*Background color (this is ignored since there is a bg image)*/
+    --color-footer: hsla(0, 0%, 80%, 0.712);            /*Footer color*/
+    --color-border: hsl(0, 0%, 80%);            /*Border color*/
+
+    --color-text: hsl(0, 0%, 0%);               /*Text color*/
+
+    --color-inTenTen-text: hsl(0, 84%, 57%);    /*Count down when in ten ten*/
+
+    --color-nav-bg: hsl(0, 0%, 97%, 0.712);            /*Navbar background color*/
+    --color-nav-border: hsl(0, 0%, 91%);        /*Navbar border color*/
+
+    --color-nav-text: hsl(0, 0%, 47%);          /*Navbar links color*/
+    --color-nav-active-text: hsl(0, 0%, 33%);   /*Navbar on hover links color*/
+    --color-nav-active-bg: hsl(0, 0%, 91%);     /*Active link on navbar & dropdown bg color*/
+
+    --color-nav-text-hover: hsl(0, 0%, 20%);    /*Text color for navbar links on hover*/
+
+    --color-nav-brand: hsl(0, 0%, 47%);         /*Navbar brand text color*/
+    --color-nav-brand-hover: hsl(0, 0%, 37%);   /*Navbar brand text color on hover*/
+
+    --image-bg: url("");                          /*Background image (If no image leave blank)*/
+
+    & body { /*Any other styling, like images or fonts   */
+        background-image: radial-gradient(circle farthest-side at center bottom, hsl(43, 100%, 57%) 0%, hsl(212, 100%, 75%) 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        .changenotes, .versionDate {
+            color: hsl(0, 0%, 17%); /*Make the text a bit more readable*/
+        }
+    }
+}

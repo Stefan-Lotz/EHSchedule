@@ -55,8 +55,8 @@
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.closeButton {
+/*what is closeButton*/
+/* .closeButton {
     cursor: pointer;
     background-color: var(--color-bg);
     font-size: 10px;
@@ -68,7 +68,7 @@
 .closeButton:hover {
     background-color: var(--color-fg);
     color: var(--color-bg);
-}
+} */
 
 .roundedCorner { /* Creates the rounded border surrounding the title of each page. */
     border: 2px solid var(--color-border);
@@ -174,16 +174,15 @@ tr.active {
     background-color: var(--color-footer);
 }
 
+html {
+    height: 100%;
+}
+
 body {
+
     padding-bottom: 5%;
     background-color: var(--color-bg);
     color: var(--color-text);
-    
-    /*If the style has a background image*/
-    background-image: var(--image-bg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
 }
 
 table { /* Makes tables format how I like them. */
