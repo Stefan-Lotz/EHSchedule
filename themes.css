@@ -48,7 +48,7 @@
     --image-bg: url("");
 }
 
-[data-theme="blue-dark"] {
+[data-theme="purple-dark"] {
     --color-bg: hsl(256 100% 6%);
     --color-footer: hsl(255 67% 20%);
     --color-border: hsl(255 67% 40%);
@@ -74,15 +74,15 @@
 
 
 [data-theme="sunrise"] {
-    --color-bg: hsl(0, 0%, 100%);               /*Background color (this is ignored since there is a bg image)*/
-    --color-footer: hsla(0, 0%, 80%, 0.712);    /*Footer color*/
+    --color-bg: hsl(0, 0%, 100%);             /*Background color (this is ignored since there is a bg image)*/
+    --color-footer: hsla(0, 0%, 80%, 0.712);            /*Footer color*/
     --color-border: hsl(0, 0%, 80%);            /*Border color*/
 
     --color-text: hsl(0, 0%, 0%);               /*Text color*/
 
     --color-inTenTen-text: hsl(0, 84%, 57%);    /*Count down when in ten ten*/
 
-    --color-nav-bg: hsl(0, 0%, 97%, 0.712);     /*Navbar background color*/
+    --color-nav-bg: hsl(0, 0%, 97%, 0.712);            /*Navbar background color*/
     --color-nav-border: hsl(0, 0%, 91%);        /*Navbar border color*/
 
     --color-nav-text: hsl(0, 0%, 47%);          /*Navbar links color*/
