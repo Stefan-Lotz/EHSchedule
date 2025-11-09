@@ -2,7 +2,7 @@ const select = document.getElementById("themeSelect");
 const themes = [
     "light",
     "dark",
-    "purple-dark",
+    "blue-dark",
     "sunrise"
 ];
 
