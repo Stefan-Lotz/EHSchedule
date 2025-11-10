@@ -1,0 +1,109 @@
+/*When JS changes the data-theme on html, the corresponding css variables will apply.*/
+
+[data-theme="light"] {
+    --color-bg: hsl(0, 0%, 100%);               /*Background color*/
+    --color-footer: hsl(0, 0%, 80%);            /*Footer color*/
+    --color-border: hsl(0, 0%, 80%);            /*Border color*/
+
+    --color-text: hsl(0, 0%, 0%);               /*Text color*/
+
+    --color-inTenTen-text: hsl(0, 84%, 57%);    /*Count down when in ten ten*/
+
+    --color-nav-bg: hsl(0, 0%, 97%);            /*Navbar background color*/
+    --color-nav-border: hsl(0, 0%, 91%);        /*Navbar border color*/
+
+    --color-nav-text: hsl(0, 0%, 47%);          /*Navbar links color*/
+    --color-nav-active-text: hsl(0, 0%, 33%);   /*Navbar on hover links color*/
+    --color-nav-active-bg: hsl(0, 0%, 91%);     /*Active link on navbar & dropdown bg color*/
+
+    --color-nav-text-hover: hsl(0, 0%, 20%);    /*Text color for navbar links on hover*/
+
+    --color-nav-brand: hsl(0, 0%, 47%);         /*Navbar brand text color*/
+    --color-nav-brand-hover: hsl(0, 0%, 37%);   /*Navbar brand text color on hover*/
+
+    --image-bg: url("");                          /*Background image (If no image leave blank)*/
+}
+
+[data-theme="dark"] {
+    --color-bg: hsl(0, 0%, 13%);
+    --color-footer: hsl(0, 0%, 20%);
+    --color-border: hsl(0, 0%, 80%);
+
+    --color-text: hsl(29, 60%, 93%);
+
+    --color-inTenTen-text: hsl(0, 84%, 57%);
+
+    --color-nav-bg: hsl(0, 0%, 13%);
+    --color-nav-border: hsl(0, 0%, 3%);
+
+    --color-nav-text: hsl(0, 0%, 62%);
+    --color-nav-active-text: hsl(0, 0%, 100%);
+    --color-nav-active-bg: hsl(0, 0%, 3%);
+
+    --color-nav-text-hover: hsl(60, 20%, 93%);
+
+    --color-nav-brand: hsl(0, 0%, 62%);
+    --color-nav-brand-hover: hsl(0, 0%, 100%);
+
+    --image-bg: url("");
+}
+
+[data-theme="evening"] {
+    --color-bg: hsl(256 100% 6%);
+    --color-footer: hsl(255 67% 20%);
+    --color-border: hsl(255 67% 40%);
+
+    --color-text: hsl(0, 0%, 89%);
+
+    --color-inTenTen-text: hsl(0deg 99.36% 34.44%);
+
+    --color-nav-bg: hsl(255 67% 20%);
+    --color-nav-border: var(--color-border);
+
+    --color-nav-text: hsl(357deg 0% 89.12%);
+    --color-nav-active-text: hsl(0, 0%, 100%);
+    --color-nav-active-bg: hsl(256 100% 6%);
+
+    --color-nav-text-hover: hsl(0deg 0% 75.74%);
+
+    --color-nav-brand: hsl(0deg 100% 99%);
+    --color-nav-brand-hover: hsl(0, 0%, 87%);
+
+    --image-bg: url("");
+}
+
+
+[data-theme="sunrise"] {
+    --color-bg: hsl(0, 0%, 100%);             /*Background color (this is ignored since there is a bg image)*/
+    --color-footer: hsla(0, 0%, 80%, 0.712);            /*Footer color*/
+    --color-border: hsl(0, 0%, 80%);            /*Border color*/
+
+    --color-text: hsl(0, 0%, 0%);               /*Text color*/
+
+    --color-inTenTen-text: hsl(0, 84%, 57%);    /*Count down when in ten ten*/
+
+    --color-nav-bg: hsl(0, 0%, 97%, 0.712);            /*Navbar background color*/
+    --color-nav-border: hsl(0, 0%, 91%);        /*Navbar border color*/
+
+    --color-nav-text: hsl(0, 0%, 47%);          /*Navbar links color*/
+    --color-nav-active-text: hsl(0, 0%, 33%);   /*Navbar on hover links color*/
+    --color-nav-active-bg: hsl(0, 0%, 91%);     /*Active link on navbar & dropdown bg color*/
+
+    --color-nav-text-hover: hsl(0, 0%, 20%);    /*Text color for navbar links on hover*/
+
+    --color-nav-brand: hsl(0, 0%, 47%);         /*Navbar brand text color*/
+    --color-nav-brand-hover: hsl(0, 0%, 37%);   /*Navbar brand text color on hover*/
+
+    --image-bg: url("");                          /*Background image (If no image leave blank)*/
+
+    & body { /*Any other styling, like images or fonts   */
+        background-image: radial-gradient(circle farthest-side at center bottom, hsl(43, 100%, 57%) 0%, hsl(212, 100%, 75%) 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        .changenotes, .versionDate {
+            color: hsl(0, 0%, 17%); /*Make the text a bit more readable*/
+        }
+    }
+}

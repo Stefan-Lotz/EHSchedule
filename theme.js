@@ -1,20 +1,29 @@
-function changeTheme() {
-    
-    document.getElementById("nav").classList.toggle("navbar-default");
-    document.getElementById("nav").classList.toggle("navbar-inverse");
-    
-    if(document.getElementById("html").getAttribute("data-theme") == "light") {
-        document.getElementById("html").setAttribute("data-theme", "dark");
-        document.getElementById("themeIcon").innerHTML = "brightness_5";
-        localStorage.setItem("themeChoice", "dark");
-    }
-    else {
+const select = document.getElementById("themeSelect");
+const themes = [
+    "light",
+    "dark",
+    "evening",
+    "sunrise"
+];
+
+function changeTheme(themeName) {
+    if (themes.includes(themeName)) {
+        document.getElementById("html").setAttribute("data-theme", themeName);
+        select.value = themeName;
+        localStorage.setItem("themeChoice", themeName);
+    } else {
+        // if the name did not match any above, default to light.
         document.getElementById("html").setAttribute("data-theme", "light");
-        document.getElementById("themeIcon").innerHTML = "brightness_4";
+        select.value = "light";
         localStorage.setItem("themeChoice", "light");
     }
 }
 
-if(localStorage.getItem("themeChoice") == "dark") {
-    changeTheme();
-}
+document.getElementById("themeSelect").addEventListener("change", () => {
+    changeTheme(select.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // if there is none saved, it will default to light.
+    changeTheme(localStorage.getItem("themeChoice"));
+})
