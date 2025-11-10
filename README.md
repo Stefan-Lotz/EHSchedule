@@ -17,3 +17,12 @@ GitHub has a wonderful feature called "pull requests". A pull request is a propo
 In layman's terms, all of the website's code exists in the ```main``` branch. To make a change, you get to edit and change an indentical copy on a new branch. Once you're happy wth your changes, your branch can be merged back into the ```main``` branch and the website will be updated!
 
 Once your pull request is finalized, I'll review your code as soon as I can get to it. If your code is accepted, you'll have contributed to the development of EHSchedule!
+
+## Adding themes
+
+Now you can design and submit your own custom theme to be added to EHSchedule that anyone can use! To do so, create a pull request containing these changes:
+
+1. Copy the CSS rule sets in ```themes.css``` and adjust the color values to create your custom theme.
+2. Change the ```data-theme="<theme name>"``` to your desired theme name.
+3. Add the theme name to the themes list in ```theme.js```. Make sure it's exactly same as the one from the CSS file.
+4. On all HTML pages, add a new ```<option>``` in the ```<select>``` tag. Make sure the ID is the same as the one used above.
