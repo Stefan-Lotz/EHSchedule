@@ -48,7 +48,7 @@
     --image-bg: url("");
 }
 
-[data-theme="purple-dark"] {
+[data-theme="evening"] {
     --color-bg: hsl(256 100% 6%);
     --color-footer: hsl(255 67% 20%);
     --color-border: hsl(255 67% 40%);
