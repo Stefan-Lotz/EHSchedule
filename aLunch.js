@@ -1,11 +1,14 @@
 function updateClock() { // Goal of this function is to grab the user's local time and day. Easier said than done.
     const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })); // Get date from a specific timezone rather than the system clock. Accounts for DST.
     const dayOfWeek = now.getDay(); // Figures out what day of the week it is.
-        
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; // List of each month that allows me to turn the int gleaned from .getMonth into String text.
     document.getElementById("month").textContent = months[now.getMonth()]; // Sets the month at the footer.
     document.getElementById("year").textContent = now.getFullYear(); // Sets the year at the footer.
-    
+    document.querySelector(".currentDay").textContent = days[dayOfWeek];
+
+
     if (dayOfWeek === 0 || dayOfWeek === 6) { // Displays a message if it's the weekend.
         // Saturday or Sunday
         document.getElementById("currentPeriod").textContent = "School is out for the weekend!";

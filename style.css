@@ -78,6 +78,11 @@
     margin: auto;
 }
 
+.currentDay {
+    display: block;
+    font-size: 18px;    
+}
+
 .aboutText { /* Aligns the text in the "About" page. If I was better at CSS and Bootstrap, this would look better on mobile devices. */
     padding-top: 20px;
     padding-bottom: 20px;

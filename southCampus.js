@@ -5,10 +5,12 @@
 function updateClock() {
     const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
     const dayOfWeek = now.getDay();
-    
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     document.getElementById("month").textContent = months[now.getMonth()];
     document.getElementById("year").textContent = now.getFullYear();
+    document.querySelector(".currentDay").textContent = days[dayOfWeek];
     
     if (dayOfWeek === 0 || dayOfWeek === 6) {
         document.getElementById("currentPeriod").textContent = "School is out for the weekend!";
