@@ -21,9 +21,9 @@ function updateClock() { // Goal of this function is to grab the user's local ti
         const period = isWednesday ? calculatePeriodWednesday(totalSeconds) : calculatePeriod(totalSeconds);
                 
         if (isWednesday) { // Displays the Wednesday bell schedule if it's Wednesday.
-            document.getElementById("p1").textContent = `7:20 - 8:04`
-            document.getElementById("p2").textContent = `8:10 - 8:50`
-            document.getElementById("p3").textContent = `8:56 - 9:36`
+            document.getElementById("p1").textContent = `7:20 - 8:00`
+            document.getElementById("p2").textContent = `8:06 - 8:46`
+            document.getElementById("p3").textContent = `8:52 - 9:36`
             document.getElementById("p4").textContent = `9:42 - 10:22`
             document.getElementById("pLunch").textContent = `10:22 - 10:52`
             document.getElementById("p5").textContent = `10:58 - 11:38`
@@ -93,9 +93,9 @@ function updateClock() { // Goal of this function is to grab the user's local ti
 function calculatePeriod(totalSeconds) { // Uses the amount of seconds that have passed since midnight to determine what period is active. This is the A Lunch schedule.
     const periods = [ // Array that includes the start and end time of each class. (In seconds since midnight)
         { name: "Before School", start: 0,     end: 26400 },
-        { name: "Period 1",      start: 26400, end: 29640 },
-        { name: "Period 2",      start: 29640, end: 33000 },
-        { name: "Period 3",      start: 33000, end: 36360 },
+        { name: "Period 1",      start: 26400, end: 29400 },
+        { name: "Period 2",      start: 29400, end: 32760 },
+        { name: "Period 3",      start: 32760, end: 36360 },
         { name: "Period 4",      start: 36360, end: 39720 },
         { name: "Lunch",         start: 39720, end: 41520 },
         { name: "Period 5",      start: 41520, end: 44880 },
@@ -116,9 +116,9 @@ function calculatePeriodWednesday(totalSeconds) { // Same thing, but for the Wed
     // These arrays are a pain to fill out. So many numbers...
     const periods = [
         { name: "Before School", start: 0,     end: 26400 },
-        { name: "Period 1",      start: 26400, end: 29040 },
-        { name: "Period 2",      start: 29040, end: 31800 },
-        { name: "Period 3",      start: 31800, end: 34560 },
+        { name: "Period 1",      start: 26400, end: 28800 },
+        { name: "Period 2",      start: 28800, end: 31560 },
+        { name: "Period 3",      start: 31560, end: 34560 },
         { name: "Period 4",      start: 34560, end: 37320 },
         { name: "Lunch",         start: 37320, end: 39120 },
         { name: "Period 5",      start: 39120, end: 41880 },
@@ -136,8 +136,8 @@ function calculatePeriodWednesday(totalSeconds) { // Same thing, but for the Wed
         
     document.getElementById("p1").textContent = `7:20 - 8:00`
     document.getElementById("p2").textContent = `8:06 - 8:46`
-    document.getElementById("p3").textContent = `8:52 - 9:32`
-    document.getElementById("p4").textContent = `9:38 - 10:22`
+    document.getElementById("p3").textContent = `8:52 - 9:36`
+    document.getElementById("p4").textContent = `9:42 - 10:22`
     document.getElementById("pLunch").textContent = `10:22 - 10:52`
     document.getElementById("p5").textContent = `10:58 - 11:38`
     document.getElementById("p6").textContent = `11:44 - 12:24`
