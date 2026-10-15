@@ -24,9 +24,9 @@ function updateClock() {
         const period = isWednesday ? calculatePeriodWednesday(totalSeconds) : calculatePeriod(totalSeconds);
             
         if (isWednesday) {
-            document.getElementById("p1").textContent = `7:20 - 7:58`
-            document.getElementById("p2").textContent = `8:08 - 8:42`
-            document.getElementById("p3").textContent = `8:54 - 9:34`
+            document.getElementById("p1").textContent = `7:20 - 8:02`
+            document.getElementById("p2").textContent = `8:12 - 8:48`
+            document.getElementById("p3").textContent = `8:58 - 9:34`
             document.getElementById("p4").textContent = `9:44 - 10:20`
             document.getElementById("p5").textContent = `10:30 - 11:06`
             document.getElementById("pLunch").textContent = `11:06 - 11:38`
@@ -95,10 +95,10 @@ function updateClock() {
 function calculatePeriod(totalSeconds) {
     const periods = [
         { name: "Before School", start: 0,     end: 26520 },
-        { name: "Period 1",      start: 26520, end: 29280 },
-        { name: "Period 2",      start: 29280, end: 32640 },
-        { name: "Period 3",      start: 32640, end: 34440 },
-        { name: "Period 4",      start: 34440, end: 39600 },
+        { name: "Period 1",      start: 26520, end: 29520 },
+        { name: "Period 2",      start: 29520, end: 32880 },
+        { name: "Period 3",      start: 32880, end: 36240 },
+        { name: "Period 4",      start: 36240, end: 39600 },
         { name: "Period 5",      start: 39600, end: 42960 },
         { name: "Lunch",         start: 42960, end: 44880 },
         { name: "Period 6",      start: 44880, end: 48120 },
@@ -117,9 +117,9 @@ function calculatePeriod(totalSeconds) {
 function calculatePeriodWednesday(totalSeconds) {
     const periods = [
         { name: "Before School", start: 0,     end: 26520 },
-        { name: "Period 1",      start: 26520, end: 28680 },
-        { name: "Period 2",      start: 28680, end: 31320 },
-        { name: "Period 3",      start: 31320, end: 34440 },
+        { name: "Period 1",      start: 26520, end: 28920 },
+        { name: "Period 2",      start: 28920, end: 31680 },
+        { name: "Period 3",      start: 31680, end: 34440 },
         { name: "Period 4",      start: 34440, end: 37200 },
         { name: "Period 5",      start: 37200, end: 39960 },
         { name: "Lunch",         start: 39960, end: 41880 },
